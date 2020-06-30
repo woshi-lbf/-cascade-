@@ -1,0 +1,30 @@
+DEMO
+===========================
+
+###########环境依赖
+win10
+opencv3.4版本及以上
+
+###########部署步骤
+opencv_createsamples.exe
+opencv_traincascade.exe
+opencv_world331.dll
+为opencv完整安装后自带的文件
+
+###########目录结构描述
+foolishtrain
+|_foolish.py
+|_data
+|_opencv_createsamples.exe
+|_opencv_traincascade.exe
+|_posdata
+|_negdata
+|_xml
+|_pos.bat
+|_neg.bat
+|_opencv_world331.dll
+
+
+
+###########V1.0.0 版本内容更新
+1. 把正负样本图片放进posdata和negdata，运行foolish.py即可本地训练级联分类器，训练200正样本时长月为3个小时。
